@@ -3,8 +3,31 @@
     "name": "FirebaseSignIn",
     "slug": "FirebaseSignIn",
     "version": "1.0.0",
+    "plugins": [
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "",
+          "clientToken": "",
+          "displayName": ""
+        }
+      ]
+    ],
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "ios": {
+      "infoPlist": {
+        "SKAdNetworkItems": [
+          {
+            "SKAdNetworkIdentifier": "v9wttpbfk9.skadnetwork"
+          },
+          {
+            "SKAdNetworkIdentifier": "n38lu8286q.skadnetwork"
+          }
+        ]
+      },
+      "bundleIdentifier": "com.joeyalpha5.FirebaseSignIn"
+    }
   }
 }
